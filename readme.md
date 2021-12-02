@@ -1,5 +1,5 @@
 # ToDo Notes
-* a small project for note tasking
+* a small project for tasks
 
 ## Technologies
 * Project created with:
