@@ -13,24 +13,15 @@ spl_autoload_register(function (string $classNamespace) {
 ### ---------------------------------------------------------------------
 
 require_once("./Utils/debug.php");
-// require_once("./prg/templateToHtml.php");  // function
 
 ### ---------------------------------------------------------------------
 
-
-// use Dto\templateToHtml;
 use Dto\Controller\Controller;
 use Dto\Controller\Request;
 use Dto\Exception\DtoException;
 use Dto\Exception\ConfigException;
 
 ### ---------------------------------------------------------------------
-### ---------------------------------------------------------------------
-// $_SESSION['logon'] = 'yes';
-// $_SESSION['login'] = 'no';
-// unset($_SESSION['logon'] );
-//  unset($_SESSION);
-//  unset($_POST);
 
 try {
 
@@ -60,11 +51,4 @@ catch (\Throwable $e)
         echo '<h1>Oh, here\'s a big bug in the application.</h1>';
         dump($e);
     }
-  
-// dump($controller);
-// dump($request);
-// dump ($get);
-// echo "<br />zmienne POST <br />";
-// dump ($post);
- // dump ($session);
- // dump($_SERVER);
+ 
