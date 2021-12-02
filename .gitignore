@@ -1,7 +1,6 @@
 .vscode/
 .doc/
 .git/
-config/
 .gitignore
 serve.cmd
 inform.php
