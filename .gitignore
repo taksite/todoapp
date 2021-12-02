@@ -1,0 +1,6 @@
+.vscode/
+.doc/
+.git/
+config/
+serve.cmd
+inform.php
