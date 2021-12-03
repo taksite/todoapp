@@ -25,7 +25,4 @@ class MsgDeleteNote extends Messages
         header('Refresh: 1; URL=index.php');
         exit();        
     }
-
-    // The note is missing
-    // Note has been deleted
 }

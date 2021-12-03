@@ -20,16 +20,12 @@ class MsgUpdateNote extends Messages
     {
         $note = "Note is missing. Check inquiry.";
         self::cool(self::showMsg($note)); 
-        // header('Refresh: 2; URL=index.php');
-        // exit();         
     }
 
     public static function noteUpdateFail(int $id_note) : void
     {
         $note = "Title, content or date too short or missing!";
-        self::cool(self::showMsg($note), "?page=update&id_note={$id_note}"); 
-        // header("Refresh: 2; URL=index.php?page=update&id_note={$id_note}");
-        // exit();        
+        self::cool(self::showMsg($note), "?page=update&id_note={$id_note}");      
     }
 
     public static function noteUpdateOk() : void
@@ -49,8 +45,3 @@ class MsgUpdateNote extends Messages
     }
 
 }
-
-/*
-'path'              => (string) self::$configuration['templates']['path'],
-'action'            => (string) $_SERVER['PHP_SELF'], 
-*/

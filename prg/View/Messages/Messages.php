@@ -20,7 +20,6 @@ class Messages
 
     public static function getConfiguration()
     {
-        // self::$dbquery = Controller::getDbQuery();
         self::$configuration = Controller::getConfiguration();
     }
 
