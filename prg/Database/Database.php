@@ -19,7 +19,7 @@ class Database {
             }
             catch (Exception $e)
             {
-                echo ('wystąpił błąd połączenia z bazą.');
+                throw new DtoException('Failed to prepare sql query.'); 
             }
             
         }
@@ -28,12 +28,5 @@ class Database {
         {
             unset($this->conn);
         }
-
-        /*
-        public function getConnect()
-        {
-            return $this->$conn;
-        }
-        */
 
 }
